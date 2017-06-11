@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" version="2.4" id="WebApp_ID">
+<welcome-file-list>
+<welcome-file>Login.jsp</welcome-file>
+</welcome-file-list>
+
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>EmployeeServlet</servlet-name>
+		<servlet-class>servlet.EmployeeServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EmployeeGet</servlet-name>
+		<servlet-class>servlet.EmployeeGet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EmployeeUpdate</servlet-name>
+		<servlet-class>servlet.EmployeeUpdate</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmployeeServlet</servlet-name>
+		<url-pattern>/EmployeeServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmployeeGet</servlet-name>
+		<url-pattern>/EmployeeGet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmployeeUpdate</servlet-name>
+		<url-pattern>/EmployeeUpdate</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
